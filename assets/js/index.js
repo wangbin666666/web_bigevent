@@ -24,10 +24,10 @@ function getUserInfo() {
   $.ajax({
     method: 'GET',
     url: '/my/userinfo',
-    headers: {
-      Authorization: localStorage.getItem('token') || ''
+    // headers: {
+    //   Authorization: localStorage.getItem('token') || ''
 
-    },
+    // },
     success: function (res) {
       // console.log(res)
       if (res.status !== 0) {
